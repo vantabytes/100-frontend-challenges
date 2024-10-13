@@ -1,9 +1,6 @@
-:host {
-  display: block;
-  width: 75vw;
-  margin: 5vh auto;
-  border: solid 2px hsla(0, 0%, 0%, 0.3);
-  padding: 0 2rem;
+h2 {
+  color: rgb(139, 64, 191);
+  font-size: 2rem;
 }
 
 .header {
@@ -11,7 +8,7 @@
   margin-bottom: 4vh;
 
   &__title {
-    font-size: 4rem;
+    font-size: 5rem;
     font-family: "Londrina Sketch", sans-serif;
     margin-bottom: 0;
   }
