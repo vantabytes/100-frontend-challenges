@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  width: 75vw;
+  margin: 5vh auto;
+  border: solid 2px hsla(0, 0%, 0%, 0.3);
+  padding: 0 2rem;
+}
+
+.header {
+  width: fit-content;
+  margin-bottom: 4vh;
+
+  &__title {
+    font-size: 4rem;
+    font-family: "Londrina Sketch", sans-serif;
+    margin-bottom: 0;
+  }
+
+  &__author {
+    font-size: 0.75rem;
+    margin: 0;
+    text-align: right;
+    color: white;
+    background-color: black;
+    padding: 4px;
+    width: fit-content;
+  }
+}
