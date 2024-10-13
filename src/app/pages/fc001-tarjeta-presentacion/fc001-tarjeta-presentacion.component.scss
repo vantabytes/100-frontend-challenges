@@ -1,0 +1,123 @@
+$shadow-color: hsla(0, 0%, 0%, 0.4);
+
+:host {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  margin: 7vh auto 0;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 2px 6px 20px $shadow-color;
+  width: clamp(320px, 30vw, 360px);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+
+  .header {
+    &__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-radius: 2rem;
+      height: 200px;
+      z-index: 0;
+    }
+
+    &__image {
+      width: 90px;
+      height: 90px;
+      border-radius: 100%;
+      object-fit: cover;
+      margin: auto;
+      box-shadow: 0 2px 12px $shadow-color;
+      position: relative;
+      z-index: 3;
+    }
+  }
+
+  .profile {
+    margin-top: 10%;
+
+    &__name {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    &__username {
+      font-size: 0.6rem;
+      margin: 0;
+      color: gray;
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+
+    .social__item {
+      list-style: none;
+      width: 25px;
+
+      svg {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .about {
+    &__content {
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin: 0;
+      text-wrap: stable;
+    }
+  }
+
+  .actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+
+    button {
+      padding: 10px 2rem;
+      border-radius: 2rem;
+      border: none;
+      font-size: 12px;
+      width: 120px;
+      cursor: pointer;
+    }
+
+    &__button-follow {
+      background-color: #ec407a;
+      color: white;
+
+      &:hover {
+        background-color: #fd518b;
+      }
+    }
+
+    &__button-message {
+      background-color: #e0e0e0;
+
+      &:hover {
+        background-color: #cccccc;
+      }
+    }
+  }
+}
