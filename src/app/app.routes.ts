@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { FC001TarjetaPresentacionComponent } from './pages/fc001-tarjeta-presentacion/fc001-tarjeta-presentacion.component';
+import { FC001TarjetaPresentacionComponent } from './features/fc001-tarjeta-presentacion/fc001-tarjeta-presentacion.component';
+import { HomeComponent } from './features/home/home.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
