@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects {
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  li {
+    list-style: "🧩 ";
+    margin-left: 5vw;
+  }
+}
